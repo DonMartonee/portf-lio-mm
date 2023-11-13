@@ -1,0 +1,54 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Cinematografica", sans-serif;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #aaa;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px; 
+    background-color: #000;
+    text-align: center;
+    border-top: 0.5px solid #555; 
+}
+
+footer p {
+    font-family: "Cinzel", sans-serif;
+    margin: 0;
+}
