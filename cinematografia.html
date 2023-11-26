@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinematografia - Seu Nome</title>
     <link rel="stylesheet" href="estilos_cinematografia.css">
+    <style>
+        /* Adicionei estilos para as molduras */
+        .video-frame {
+            margin: 10px;
+            border: 2px solid #e74c3c;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px; /* Defina a largura máxima das molduras conforme necessário */
+            text-decoration: none; /* Removi a decoração de link */
+        }
+
+        .video-frame img {
+            width: 100%;
+            max-width: 100%; /* Ajusta a largura máxima para 100% do tamanho do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 5px;
+        }
+
+        /* Aumentei o tamanho do texto e defini a cor preta para as opções de navegação */
+        .nav-links a,
+        .video-frame figcaption {
+            font-size: 20px;
+            color: #000; /* Cor preta */
+            text-decoration: none; /* Removi a decoração de link */
+        }
+
+        /* Evita barras de rolagem verticais */
+        body {
+            overflow-y: auto;
+        }
+
+        /* Mantém o rodapé na parte inferior da página */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Garante que o conteúdo empurre o rodapé para baixo se necessário */
+        .cinematografia-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="cinematografia-container">
@@ -12,11 +59,36 @@
             <h2>Cinematografia</h2>
         </div>
 
-        
-        <p>Aqui você pode adicionar informações sobre seus trabalhos cinematográficos.</p>
+        <!-- Opções de navegação abaixo do título -->
+        <div class="nav-links">
+            <a href="file:///C:/Users/novod/Desktop/Facul/Portifólio%20Gráfico/Meu%20Portfolio%20Programação/index.html">Home</a>
+            <a href="contato.html">Contato</a>
+            <a href="#">Sobre</a>
+        </div>
 
-        
+        <!-- Moldura 1 -->
+        <a href="https://youtu.be/v8hyNVvGlIk" class="video-frame" target="_blank">
+            <figure>
+                <img src="O Bicho Thumbnail.png" alt="Thumbnail do Vídeo 1">
+                <figcaption>O Bicho - Curta-metragem</figcaption>
+            </figure>
+        </a>
 
+        <!-- Moldura 2 -->
+        <a href="https://youtu.be/1HsK82HmXQk" class="video-frame" target="_blank">
+            <figure>
+                <img src="Luto Thumbnail.png" alt="Thumbnail do Vídeo 2">
+                <figcaption>Luto - Curta-metragem</figcaption>
+            </figure>
+        </a>
+
+        <!-- Moldura 3 -->
+        <a href="https://youtu.be/NcTUEbFVbAU" class="video-frame" target="_blank">
+            <figure>
+                <img src="Caminhos Thumbnail.png" alt="Thumbnail do Vídeo 3">
+                <figcaption>Caminhos - Mini Doc</figcaption>
+            </figure>
+        </a>
     </div>
 
     <footer>

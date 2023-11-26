@@ -11,9 +11,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
             margin: 0;
             background-color: #eee;
+            overflow-x: hidden; /* Evita barras de rolagem horizontais */
         }
 
         h1 {
@@ -38,6 +38,11 @@
             color: #333;
             font-size: 1.2em;
         }
+
+        footer {
+            margin-top: auto; /* Coloca o rodapé na parte inferior da página */
+            padding: 10px; /* Adicionei algum espaço ao redor do rodapé */
+        }
     </style>
 </head>
 <body>
@@ -48,10 +53,9 @@
         <a href="cinematografia.html">Cinematografia</a>
         <a href="#">Sobre</a>
     </nav>
-</section>
 
-<footer>
-    <p>&copy; 2023 MM. Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2023 MM. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
